@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceito de Estilos em Cascata</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Conceito de Estilos em Cascata (CSS)</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cascata.html">Estilos em Cascata</a></li>
+                <li><a href="formatação.html">Formatação CSS</a></li>
+                <li><a href="box-model.html">Box Model</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>O Que São Estilos em Cascata?</h2>
+            <p>No CSS, a "cascata" significa que os estilos são aplicados de acordo com sua especificidade, e estilos mais específicos sobrepõem os mais gerais. A ordem dos estilos, a especificidade e as regras de herança determinam qual estilo será aplicado.</p>
+            
+            <h3>Seletores no CSS</h3>
+            <p>Existem diferentes tipos de seletores no CSS: seletor de elemento, seletor de classe e seletor de ID. Abaixo, você verá como cada um afeta o estilo dos elementos:</p>
+
+            <h3>1. Seletor de Elemento</h3>
+            <p>Este parágrafo é estilizado por um seletor de elemento (todos os `<p>`).</p>
+
+            <h3>2. Seletor de Classe</h3>
+            <p class="classe-exemplo">Este parágrafo é estilizado por um seletor de classe (classe-exemplo).</p>
+
+            <h3>3. Seletor de ID</h3>
+            <p id="id-exemplo">Este parágrafo é estilizado por um seletor de ID (id-exemplo).</p>
+
+            <!-- Exemplo de estilos com maior especificidade -->
+            <div class="container">
+                <h3>4. Exemplo de Hierarquia com Especificidade</h3>
+                <p class="classe-exemplo destaque" id="exemplo-complexo">Este parágrafo tem múltiplos estilos aplicados de um ID, duas classes e um seletor de elemento.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Desenvolvido por [emanuely e felipe]</p>
+    </footer>
+   
